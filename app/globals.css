@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ivory: #F4F1EA;
+  --ink: #121212;
+  --acid-lime: #C7FF2E;
+  --electric-blue: #315CFF;
+  --clay: #B84A3C;
+  --titanium: #B8B6B0;
+}
+
+body {
+  background-color: var(--ivory);
+  color: var(--ink);
+  font-family: 'Inter', 'Manrope', 'Helvetica Neue', sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--acid-lime);
+  color: var(--ink);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
