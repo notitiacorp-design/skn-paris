@@ -1,39 +1,21 @@
 'use client';
 
 import { useEffect } from 'react';
-import dynamic from 'next/dynamic';
 import Header from '@/components/Header';
+import HeroNarrative from '@/components/HeroNarrative';
 import MethodSection from '@/components/MethodSection';
 import Marquee from '@/components/Marquee';
 import ProductCard from '@/components/ProductCard';
 import CommunityGrid from '@/components/CommunityGrid';
 import Footer from '@/components/Footer';
 
-// Heavy GSAP component loaded dynamically
-const HeroNarrative = dynamic(() => import('@/components/HeroNarrative'), {
-  ssr: false,
-  loading: () => (
-    <div className="w-full h-screen flex items-center justify-center bg-[#F4F1EA]">
-      <p className="text-sm text-[#121212]/30 tracking-[0.3em] uppercase">SKN PARIS</p>
-    </div>
-  ),
-});
-
 const products = [
   { num: '01', name: 'RESET', type: 'Cleanser', desc: 'Nettoie sans décaper. Une mousse légère qui respecte le pH naturel de votre peau.', price: '49 €', accent: '#B84A3C' },
-  { num: '02', name: 'BARRIER', type: 'Serum', desc: 'Le cœur de la routine. Ceramides, niacinamide et panthenol pour une barrière cutanée renforcée.', price: '89 €', accent: '#315CFF' },
-  { num: '03', name: 'SHIELD', type: 'SPF 50', desc: 'Protection minérale quotidienne. Aucun filtre chimique. Texture invisible sur toutes les carnations.', price: '59 €', accent: '#C7FF2E' },
+  { num: '02', name: 'BARRIER', type: 'Serum', desc: 'Le cœur de la routine. Ceramides, niacinamide et panthenol pour une barrière cutanée renforcée.', price: '89 €', accent: '#C49A6C' },
+  { num: '03', name: 'SHIELD', type: 'SPF 50', desc: 'Protection minérale quotidienne. Aucun filtre chimique. Texture invisible sur toutes les carnations.', price: '59 €', accent: '#A8D5BA' },
 ];
 
 export default function Home() {
-  useEffect(() => {
-    // Set document font
-    const link = document.createElement('link');
-    link.href = 'https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap';
-    link.rel = 'stylesheet';
-    document.head.appendChild(link);
-  }, []);
-
   return (
     <main className="font-sans">
       <Header />

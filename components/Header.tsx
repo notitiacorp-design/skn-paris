@@ -36,12 +36,19 @@ export default function Header() {
 
           <Link
             href="/shop"
-            className="px-5 py-2 bg-[#C7FF2E] text-[#121212] text-xs tracking-[0.15em] uppercase font-medium hover:bg-[#b3e626] transition-colors"
+            className="px-5 py-2 bg-[#A8D5BA] text-[#121212] text-xs tracking-[0.15em] uppercase font-medium hover:bg-[#96C4A8] transition-colors"
           >
             FIND YOUR SKN →
           </Link>
 
-          <button className="w-8 h-8 rounded-full bg-[#121212] text-[#F4F1EA] text-xs flex items-center justify-center">
+          {/* Chrome cart button */}
+          <button
+            className="w-8 h-8 rounded-full flex items-center justify-center text-xs text-[#121212]"
+            style={{
+              background: 'radial-gradient(circle at 35% 35%, #f5f5f5, #c0c0c0 50%, #a0a0a0 80%, #808080)',
+              boxShadow: 'inset 0 -1px 3px rgba(0,0,0,0.2), 0 2px 6px rgba(0,0,0,0.1)',
+            }}
+          >
             0
           </button>
         </div>

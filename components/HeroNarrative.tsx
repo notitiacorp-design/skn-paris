@@ -82,19 +82,19 @@ export default function HeroNarrative() {
 
       {/* Chrome sphere */}
       <div ref={chromeSphereRef} className="absolute top-[20%] right-[25%] w-48 h-48 rounded-full z-10"
-        style={{ background: 'radial-gradient(circle at 35% 35%, #e8e8e8, #8a8a8a 60%, #4a4a4a)' }} />
+        style={{ background: 'radial-gradient(circle at 35% 35%, #f5f5f5, #c0c0c0 50%, #a0a0a0 80%, #808080)', boxShadow: 'inset 0 -2px 6px rgba(0,0,0,0.15), 0 4px 12px rgba(0,0,0,0.1)' }} />
 
-      {/* Gel blob */}
+      {/* Gel blob — mint instead of acid lime */}
       <div ref={gelRef} className="absolute top-[35%] right-[10%] w-40 h-56 rounded-[60%_40%_50%_50%] z-10 opacity-70"
-        style={{ background: 'radial-gradient(ellipse at center, rgba(199,255,46,0.25), rgba(199,255,46,0.05))', filter: 'blur(20px)' }} />
+        style={{ background: 'radial-gradient(ellipse at center, rgba(168,213,186,0.25), rgba(168,213,186,0.05))', filter: 'blur(20px)' }} />
 
       {/* Porous rock */}
       <div ref={rockRef} className="absolute bottom-[15%] right-[20%] w-36 h-36 z-10 opacity-80"
         style={{ borderRadius: '40% 60% 45% 55%', background: 'radial-gradient(circle at 40% 40%, #F4F1EA, #d4d0c6, #b8b4aa)' }} />
 
-      {/* Grid overlay */}
+      {/* Grid overlay — warm mineral instead of electric blue */}
       <div className="absolute inset-0 z-10 opacity-[0.03] pointer-events-none"
-        style={{ backgroundImage: 'linear-gradient(#315CFF 1px, transparent 1px), linear-gradient(90deg, #315CFF 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
+        style={{ backgroundImage: 'linear-gradient(#C49A6C 1px, transparent 1px), linear-gradient(90deg, #C49A6C 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
 
       {/* Hero Copy — Scene 1 */}
       <div ref={heroCopyRef} className="absolute top-[15%] left-[8%] max-w-[45%] z-20">
@@ -109,14 +109,14 @@ export default function HeroNarrative() {
 
       {/* CTA */}
       <div ref={ctaRef} className="absolute bottom-[12%] left-[8%] z-20">
-        <button className="px-8 py-4 bg-[#C7FF2E] text-[#121212] text-sm tracking-[0.15em] uppercase font-medium hover:bg-[#b3e626] transition-colors">
+        <button className="px-8 py-4 bg-[#A8D5BA] text-[#121212] text-sm tracking-[0.15em] uppercase font-medium hover:bg-[#96C4A8] transition-colors">
           DÉCOUVRIR LA ROUTINE →
         </button>
       </div>
 
       {/* Product Image — Scene 1 */}
       <div ref={productImgRef} className="absolute top-1/2 right-[12%] -translate-y-1/2 z-20" style={{ perspective: '1200px' }}>
-        <div className="w-72 h-96 bg-gradient-to-b from-[#e8e4d8] to-[#c8c4b8] rounded-[40px] flex items-center justify-center shadow-2xl">
+        <div className="w-72 h-96 bg-gradient-to-b from-[#e8e4d8] to-[#c8c4b8] rounded-[40px] flex items-center justify-center shadow-2xl glass-ribbed">
           <div className="w-16 h-64 bg-white/60 rounded-full blur-sm" />
           <div className="absolute top-8 left-1/2 -translate-x-1/2 w-24 h-32 bg-[#121212] flex flex-col items-center justify-center text-[#F4F1EA] text-[8px] tracking-[0.2em] leading-relaxed">
             SKN<br />PARIS<br /><br />02<br />BARRIER<br />SERUM<br />30ML
@@ -126,7 +126,7 @@ export default function HeroNarrative() {
 
       {/* Barrier Word — Scene 2 */}
       <div ref={barrierWordRef} className="absolute inset-0 flex items-center justify-center z-10 opacity-0 pointer-events-none">
-        <span className="text-[20vw] font-serif text-[#C7FF2E] opacity-20 tracking-[-0.04em] select-none">
+        <span className="text-[20vw] font-serif text-[#A8D5BA] opacity-20 tracking-[-0.04em] select-none">
           BARRIER
         </span>
       </div>
@@ -149,16 +149,16 @@ export default function HeroNarrative() {
       </div>
       {/* Niacinamide */}
       <div ref={ingNiacinamideRef} className="absolute top-[40%] right-[8%] z-30 opacity-0 scale-50">
-        <div className="w-36 h-20 rounded-full bg-[#C7FF2E]/80 flex flex-col items-center justify-center shadow-xl">
+        <div className="w-36 h-20 rounded-full bg-[#A8D5BA]/80 flex flex-col items-center justify-center shadow-xl">
           <span className="text-[10px] tracking-[0.2em] text-[#121212] mb-1">NIACINAMIDE</span>
           <div className="w-8 h-8 rounded-full bg-[#121212]/20" />
         </div>
       </div>
       {/* Panthenol */}
       <div ref={ingPanthenolRef} className="absolute bottom-[20%] left-[15%] z-30 opacity-0 scale-50">
-        <div className="w-28 h-40 rounded-[50%] bg-blue-100/80 flex flex-col items-center justify-center shadow-xl">
-          <span className="text-[10px] tracking-[0.2em] text-[#315CFF]/80 mb-2">PANTHENOL</span>
-          <div className="w-10 h-10 rounded-full bg-[#315CFF]/20 blur-sm" />
+        <div className="w-28 h-40 rounded-[50%] bg-[#E8C4A2]/80 flex flex-col items-center justify-center shadow-xl">
+          <span className="text-[10px] tracking-[0.2em] text-[#C49A6C]/80 mb-2">PANTHENOL</span>
+          <div className="w-10 h-10 rounded-full bg-[#C49A6C]/20 blur-sm" />
         </div>
       </div>
 
@@ -180,14 +180,14 @@ export default function HeroNarrative() {
             </div>
           </div>
           <div className="flex items-start gap-4">
-            <div className="w-10 h-10 rounded-full bg-[#C7FF2E]/80 flex-shrink-0" />
+            <div className="w-10 h-10 rounded-full bg-[#A8D5BA]/80 flex-shrink-0" />
             <div>
               <p className="text-xs tracking-[0.2em] text-[#121212]/50 uppercase">Niacinamide</p>
               <p className="text-sm text-[#121212]/70">Aide à améliorer l&apos;uniformité visuelle de la peau.</p>
             </div>
           </div>
           <div className="flex items-start gap-4">
-            <div className="w-10 h-10 rounded-full bg-blue-100 flex-shrink-0" />
+            <div className="w-10 h-10 rounded-full bg-[#E8C4A2] flex-shrink-0" />
             <div>
               <p className="text-xs tracking-[0.2em] text-[#121212]/50 uppercase">Panthenol</p>
               <p className="text-sm text-[#121212]/70">Apporte du confort et soutient l&apos;hydratation.</p>
@@ -204,7 +204,7 @@ export default function HeroNarrative() {
             { name: '03 SHIELD', type: 'SPF 50', price: '59€', size: 'w-48 h-68', pos: 'rotate-3' }
           ].map((p, i) => (
             <div key={p.name} className={`routine-item flex flex-col items-center gap-3 ${p.pos}`}>
-              <div className={`${p.size} bg-gradient-to-b from-[#e8e4d8] to-[#c8c4b8] rounded-[30px] flex items-center justify-center shadow-xl relative`}>
+              <div className={`${p.size} bg-gradient-to-b from-[#e8e4d8] to-[#c8c4b8] rounded-[30px] flex items-center justify-center shadow-xl relative glass-ribbed`}>
                 <div className="absolute top-6 left-1/2 -translate-x-1/2 w-16 h-24 bg-[#121212] flex flex-col items-center justify-center text-[#F4F1EA] text-[7px] tracking-[0.15em] leading-relaxed">
                   SKN<br />{p.name.split(' ')[0]}<br />{p.name.split(' ')[1]}
                 </div>
@@ -219,7 +219,7 @@ export default function HeroNarrative() {
         <div className="text-center pb-20">
           <p className="text-2xl font-serif text-[#121212] mb-2">THE SKN SYSTEM</p>
           <p className="text-sm text-[#121212]/50 mb-6">3 gestes. Une routine qui respecte ta peau.</p>
-          <button className="px-8 py-4 bg-[#C7FF2E] text-[#121212] text-xs tracking-[0.15em] uppercase font-medium hover:bg-[#b3e626] transition-colors">
+          <button className="px-8 py-4 bg-[#A8D5BA] text-[#121212] text-xs tracking-[0.15em] uppercase font-medium hover:bg-[#96C4A8] transition-colors">
             SHOP THE SYSTEM — 89 €
           </button>
         </div>

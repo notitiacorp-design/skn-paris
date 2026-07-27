@@ -4,14 +4,14 @@ export default function CommunityGrid() {
     { type: 'vid', color: '#c4bfb4' },
     { type: 'review', color: '#121212', text: 'Enfin une routine simple qui marche. — Camille L.' },
     { type: 'img', color: '#e4dfd4' },
-    { type: 'review', color: '#C7FF2E', text: 'Ma peau n\'a jamais été aussi calme. — Marc D.' },
+    { type: 'review', color: '#A8D5BA', text: 'Ma peau n\'a jamais été aussi calme. — Marc D.' },
     { type: 'img', color: '#b4afa4' },
   ];
 
   return (
     <section className="bg-[#121212] text-[#F4F1EA] py-24 px-8">
       <div className="max-w-[1440px] mx-auto">
-        <p className="text-xs tracking-[0.3em] text-[#C7FF2E] uppercase mb-4">Community</p>
+        <p className="text-xs tracking-[0.3em] text-[#A8D5BA] uppercase mb-4">Community</p>
         <h2 className="text-5xl lg:text-6xl font-serif mb-16">
           REAL SKN.<br />REAL ROUTINES.
         </h2>

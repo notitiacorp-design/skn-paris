@@ -21,7 +21,7 @@ export default function MethodSection() {
               { num: '04', title: 'PROOF OVER HYPE', desc: "Nous publions nos tests. Pas de promesses vides, pas de peur créée artificiellement." },
             ].map((p) => (
               <div key={p.num} className="border-b border-[#F4F1EA]/10 pb-8 last:border-0 last:pb-0">
-                <p className="text-xs tracking-[0.3em] text-[#C7FF2E] mb-2">{p.num}</p>
+                <p className="text-xs tracking-[0.3em] text-[#A8D5BA] mb-2">{p.num}</p>
                 <h3 className="text-lg font-medium tracking-wide mb-2">{p.title}</h3>
                 <p className="text-sm text-[#F4F1EA]/60 leading-relaxed">{p.desc}</p>
               </div>

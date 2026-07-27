@@ -23,7 +23,7 @@ export default function Marquee() {
   }, []);
 
   return (
-    <section className="bg-[#C7FF2E] py-6 overflow-hidden whitespace-nowrap">
+    <section className="bg-[#A8D5BA] py-6 overflow-hidden whitespace-nowrap">
       <div ref={marqueeRef} className="flex">
         <div className="marquee-content flex gap-8 pr-8">
           {[...Array(6)].map((_, i) => (
