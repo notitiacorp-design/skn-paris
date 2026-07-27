@@ -1,0 +1,2 @@
+:HL["/skn-paris/next/static/chunks/44qj6feswpc4y.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"lVjfJO33claRsITG3J_ox"}
